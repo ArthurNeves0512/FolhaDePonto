@@ -6,15 +6,12 @@ import br.com.folhaponto.services.FuncionarioService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
-@RestController//isso indica que queremos retornar apenas valores JSON e nao  paginas hmtl por causa do @ResposyBody
+@RestController//isso indica que queremos retornar apenas valores JSON e nao  paginas hmtl por causa do @ResposeBody
 @RequestMapping(path = "/funcionario")
 @RequiredArgsConstructor
 public class FuncionarioRest {
